@@ -36,7 +36,6 @@ public class MinWindow2 {
         }
 
         int left = 0, right = 0;
-
         int valid = 0;
         // 记录最小覆盖子串的起始索引及长度
         int start = 0, len = Integer.MAX_VALUE;
@@ -57,7 +56,6 @@ public class MinWindow2 {
             // 其中 valid 变量表示窗口中满足 need 条件的字符个数，如果 valid 和 need.size 的大小相同，则说明窗口已满足条件，
             // 已经完全覆盖了串 T
             while (valid == need.size()) {
-
                 // 在这里更新最小覆盖子串
                 if (right - left < len) {
                     start = left;
@@ -75,7 +73,6 @@ public class MinWindow2 {
                     window.put(d, window.get(d) - 1);
                 }
             }
-
         }
         // 返回最小覆盖子串
         return len == Integer.MAX_VALUE ? "" : s.substring(start, start + len);

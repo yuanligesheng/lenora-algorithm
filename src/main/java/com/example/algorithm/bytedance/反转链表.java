@@ -1,4 +1,4 @@
-package com.example.algorithm.zijie;
+package com.example.algorithm.bytedance;
 
 /**
  * @Author Wang Haoyu
